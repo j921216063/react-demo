@@ -1,4 +1,5 @@
 import React, { Component, PureComponent } from 'react';
+import PropTypes from 'prop-types'
 
 // const Demo1 = (props) => {
 //   console.log('redner Demo1');
@@ -32,6 +33,12 @@ class UseDefaultDemo extends PureComponent {
       <div>{this.props.values.toString()}</div>
     )
   }
+}
+UseDefaultDemo.defaultProps = {
+  values: []
+}
+UseDefaultDemo.propTypes = {
+  values: PropTypes.string
 }
 
 class WrapChildDemo extends PureComponent {

@@ -33,7 +33,7 @@ export default class Demo11 extends Component {
         <hr />
         <h3>Model 綁定 View :</h3>
         <input className="mr-2" type="text" value={this.state.name} readOnly />
-        <button className="btn btn-primary" onClick={this.handleClick}>Change Modle</button>
+        <button className="btn btn-primary" onClick={this.handleClick}>Change Model</button>
         <hr />
         <h3>雙向綁定 :</h3>
         <input className="mr-2" type="text" value={this.state.name} onChange={this.handleTextChange} />
